@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch and Pomodoro Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a>Produtivity place :3</a></li>
+            <li><a href="#" onclick="showStopwatch()">Stopwatch</a></li>
+            <li><a href="#" onclick="showPomodoro()">Pomodoro</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="stopwatch" class="stopwatch">
+            <div class="display">
+                <div class="dis">00:00:00:00</div>
+                <div class="controls">
+                    <button class="stop" onclick="stop()">Stop</button>
+                    <button class="start" onclick="start()">Start</button>
+                    <button class="reset" onclick="reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+        <div id="pomodoro" class="pomodoro" style="display:none;">
+            <div class="display">
+                <div class="dis">25:00</div>
+                <div class="controls">
+                    <button class="stop" onclick="stopPomodoro()">Stop</button>
+                    <button class="start" onclick="startPomodoro()">Start</button>
+                    <button class="reset" onclick="resetPomodoro()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
