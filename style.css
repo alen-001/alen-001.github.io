@@ -15,7 +15,7 @@ h1{
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-image: url("alen-001.github.io/cute.jpeg");
+    background-image: url("/alen-001.github.io/cute.jpeg");
     background-size: cover;
     background-position: center;
     /*background-color: #9589cd;*/
